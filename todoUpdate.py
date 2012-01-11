@@ -11,6 +11,8 @@ for line in fileinput.FileInput("/Users/alanj/Dropbox/todo/todo.txt",inplace=1):
    line = line.replace(yesterday,today)
    sys.stdout.write(line)
 
+# to do: revise block above to catch all dates prior to today and replace with today's date
+
 # to do: add another element to my todo.txt file to record number of days something is overdue, 
 # increment that value by 1 each time the replacement above happens.
 
